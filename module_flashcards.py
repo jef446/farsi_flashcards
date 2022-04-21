@@ -52,7 +52,7 @@ class UiModuleFlashcards(object):
         self.pushButton.setText(_translate("moduleFlashcards", "Next"))
         self.label.setText(_translate("moduleFlashcards", "Image flash"))
         self.label_2.setText(_translate("moduleFlashcards", "Farsi Text"))
-        self.label_3.setText(_translate("moduleFlashcards", "Pronunciation"))
+        self.label_3.setText(_translate("moduleFlashcards", "English text"))
 
 
 if __name__ == "__main__":
