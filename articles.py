@@ -1,4 +1,4 @@
-adverbs={
+articles={
 "a":"",
 "all":"",
 "an":"",
