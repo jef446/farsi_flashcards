@@ -1,0 +1,38 @@
+verbs={
+"to add" : "اضافه کردن",
+"to agree" : "موافقت کردن",
+"to allow" : "اجازه دادن",
+"to appear" : "ظاهر شدن",
+"to ask" : "پرسیدن",
+"to be" : "بودن",
+"to become" : "شدن",
+"to begin" : شروع کردن
+"to believe" : "باور كردن",
+"to bring" : "آوردن",
+"to build" : "ساختن",
+"to buy" : "خریدن",
+"to call" : "زنگ زدن,
+"to carry" : "حمل کردن 
+"to change" : "عوض شدن",
+"to come" : "آمدن",
+"to consider" : "در نظر گرفتن",
+"to continue" : "ادامه دادن",
+"to create" : "خلق كردن",
+"to decide" : "برای تصمی lم 
+	ت	to describe" : "' توصیف",
+"to develop" : "توسعه دهد",
+"to die" : "برای مردن",
+"to do" : "",
+"to draw" : "کشیدن",
+"to except" : "به جز",
+"to fall" : "افتادن",
+"to feel" : "حس کردن",
+"to find" : "برای پیدا کردن",
+"to follow" : "پيگيري كردن",
+"to get" : "برای بدست آوردن",
+"to give" : "دادن",
+"to go" : "رفتن",
+"to happen" : "اتفاق افتادن",
+"to have" : "داشتن",
+}
+

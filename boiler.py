@@ -4,7 +4,7 @@ from PyQt5.QtWidgets import QApplication, QFileDialog, QDialog, QPlainTextEdit
 from PyQt5.QtWidgets import QMainWindow, QWidget
 from farsiDictionary import farsimap
 
-from module_flashcards import UiModuleFlashcards
+from module_flashcards_ import UiModuleFlashcards
 clicks=-1
 clicks=0
 I=0
@@ -56,8 +56,8 @@ class ModuleFlashcardsWindow(QWidget):
         new_word_list=list(shuffled_dictionary[fm_keys[I]].keys())
         print(new_word_list)
         self.ui.label.setText(fm_keys[I])
-        self.ui.label_2.setText(new_word_list[J])
-        self.ui.label_3.setText(farsimap[fm_keys[I]][new_word_list[J]])
+        self.ui.label_2.setText(farsimap[fm_keys[I]][new_word_list[J]])
+        self.ui.label_3.setText(new_word_list[J])
         J+=1
 
 

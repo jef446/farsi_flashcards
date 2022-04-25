@@ -1,0 +1,13 @@
+modal_verbs={
+"can":"",
+"could":"",
+"have":"",
+"to":"",
+"may":"",
+"might":"",
+"must":"",
+"shall":"",
+"should":"",
+"will":"",
+"would":"",
+}

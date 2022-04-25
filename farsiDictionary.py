@@ -39,7 +39,9 @@ text="mi casa"
 
 translator.detect(text)
 '''
+from translations import verbs
 farsimap={
+"Auto Verbs":verbs,
 "Adjectives":{
 "something":"something",
 },
@@ -65,7 +67,7 @@ farsimap={
 "something":"something",
 },
 "Verbs":{
-"to add":"برای اضافه کردن",
+"to add":"اضافه کردن",
 "to agree":"برای موافقت",
 "to allow":"اجازه دادن",
 "to appear":"ظاهر شدن",
