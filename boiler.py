@@ -2,9 +2,9 @@ import sys,random
 from PyQt5 import QtCore, QtGui, QtWidgets
 from PyQt5.QtWidgets import QApplication, QFileDialog, QDialog, QPlainTextEdit
 from PyQt5.QtWidgets import QMainWindow, QWidget
-from farsiDictionary import farsimap
+from GUI.farsiDictionary import farsimap
 
-from module_flashcards_ import UiModuleFlashcards
+from GUI.module_flashcards_ import UiModuleFlashcards
 clicks=-1
 clicks=0
 I=0

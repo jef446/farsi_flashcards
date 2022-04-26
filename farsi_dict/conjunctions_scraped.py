@@ -1,0 +1,4 @@
+conjunctions={
+"after" : "",
+"although" : "",
+}

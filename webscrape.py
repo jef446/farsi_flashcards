@@ -46,16 +46,16 @@ import html
 import random
 from lxml import html as parser
 
-from adjectives import adjectives
-from adverbs import adverbs
-from articles import articles
-from conjunctions import conjunctions
-from interjections import interjections
-from modal_verb import modal_verbs
-from nouns import nouns
-from prepositions import prepositions
-from pronouns import pronouns
-from verbs import verbs
+from GUI.adjectives import adjectives
+from GUI.adverbs import adverbs
+from GUI.articles import articles
+from GUI.conjunctions import conjunctions
+from GUI.interjections import interjections
+from GUI.modal_verb import modal_verbs
+from GUI.nouns import nouns
+from GUI.prepositions import prepositions
+from GUI.pronouns import pronouns
+from GUI.verbs import verbs
 
 list_of_dicts = ["adjectives", "adverbs", "articles", "conjunctions", "interjections", "modal_verbs", "nouns", "prepositions", "pronouns", "verbs"]
 list_of_words = [adjectives, adverbs, articles, conjunctions, interjections, modal_verbs, nouns, prepositions, pronouns, verbs]
@@ -125,7 +125,8 @@ for iii in range(0,len(lists_2_trans)):
         f.close()
         #s=input("Ctrl+C to end")
 
-        time.sleep(float(random.choice([3,4,5,6,7,8,9,10])))
+        #time.sleep(float(random.choice([3,4,5,6,7,8,9,10])))
+        time.sleep(0.1)
 
 ###
 

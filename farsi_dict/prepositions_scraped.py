@@ -1,0 +1,4 @@
+prepositions={
+"about" : "",
+"across" : "",
+}

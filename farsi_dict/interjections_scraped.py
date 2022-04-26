@@ -1,0 +1,4 @@
+interjections={
+"oh" : "",
+"no" : "",
+}

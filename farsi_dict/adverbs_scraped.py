@@ -1,0 +1,4 @@
+adverbs={
+"about" : "",
+"actually" : "",
+}
