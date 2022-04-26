@@ -46,7 +46,7 @@ import html
 import random
 from lxml import html as parser
 
-from verbs import verbs
+from adjectives import adjectives
 from adverbs import adverbs
 from articles import articles
 from conjunctions import conjunctions
@@ -55,51 +55,13 @@ from modal_verb import modal_verbs
 from nouns import nouns
 from prepositions import prepositions
 from pronouns import pronouns
+from verbs import verbs
 
-list_of_dicts = ["verbs", "adverbs", "articles", "conjunctions", "interjections", "modal_verbs", "nouns", "prepositions", "pronouns"]
-list_of_words = [verbs, adverbs, articles, conjunctions, interjections, modal_verbs, nouns, prepositions, pronouns]
+list_of_dicts = ["adjectives", "adverbs", "articles", "conjunctions", "interjections", "modal_verbs", "nouns", "prepositions", "pronouns", "verbs"]
+list_of_words = [adjectives, adverbs, articles, conjunctions, interjections, modal_verbs, nouns, prepositions, pronouns, verbs]
 lists_2_trans=[]
 for i in range(0,len(list_of_words)):
     lists_2_trans.append(list(list_of_words[i].keys()))
-
-# list_to_translate=[
-# "to add",
-# "to agree",
-# "to allow",
-# "to appear",
-# "to ask",
-# "to be",
-# "to become",
-# "to begin",
-# "to believe",
-# "to bring",
-# "to build",
-# "to buy",
-# "to call",
-# "to carry",
-# "to change",
-# "to come",
-# "to consider",
-# "to continue",
-# "to create",
-# "to decide",
-# "to describe",
-# "to develop",
-# "to die",
-# "to do",
-# "to draw",
-# "to except",
-# "to fall",
-# "to feel",
-# "to find",
-# "to follow",
-# "to get",
-# "to give",
-# "to go",
-# "to happen",
-# "to have",
-# ]
-
 
 user_agents=[#'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:99.0) Gecko/20100101 Firefox/99.0',
 'Mozilla/5.0 (X11; Linux i686; rv:99.0) Gecko/20100101 Firefox/99.0',
@@ -131,7 +93,7 @@ for iii in range(0,len(lists_2_trans)):
         ####image_tree = parser.fromstring(image_page.content)
         translation = tree.xpath('//pre[@id="tw-target-text"]/span[@class="Y2IQFc"]/text()')
         print(translation)
-        if i == 10:
+        if i == 2:
             break
         #image_dl_link=image_tree.xpath('//div[@class="mJxzWe"]')
         #image_dl_link=image_tree.xpath('//div[@class="isv-r PNCib MSM1fd BUooTd"]')
@@ -161,8 +123,9 @@ for iii in range(0,len(lists_2_trans)):
         if i == (len(list_to_translate)-1):
             f.write("}\n")
         f.close()
+        #s=input("Ctrl+C to end")
 
-        time.sleep(10.)
+        time.sleep(float(random.choice([3,4,5,6,7,8,9,10])))
 
 ###
 
