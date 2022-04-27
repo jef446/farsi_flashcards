@@ -71,7 +71,11 @@ user_agents=[#'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:99.0) Gecko/20100101
 #'Mozilla/5.0 (X11; Fedora; Linux x86_64; rv:99.0) Gecko/20100101 Firefox/99.0',]
 #
 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:99.0) Gecko/20100101 Firefox/99.0',
-'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:98.0) Gecko/20100101 Firefox/98.0',]
+'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:98.0) Gecko/20100101 Firefox/98.0',
+'Mozilla/5.0 (Linux x86_64; rv:99.0) Gecko/20100101 Firefox/99.0',
+'Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:99.0) Gecko/20100101 Firefox/99.0',
+'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:99.0) Gecko/20100101 Firefox/99.0',
+'Mozilla/5.0 (X11; Fedora; Linux x86_64; rv:99.0) Gecko/20100101 Firefox/99.0',]
 for iii in range(0,len(lists_2_trans)):
     list_to_translate=lists_2_trans[iii]
     print(list_to_translate)
@@ -126,7 +130,7 @@ for iii in range(0,len(lists_2_trans)):
         f.close()
         #s=input("Ctrl+C to end")
 
-        time.sleep(float(random.choice([3,4,5,6,7,8,9,10]))+float(random.choice[0.13,0.121,0.785,0.342]))
+        time.sleep(float(random.choice([3,4,5,6,7,8,9,10]))+float(random.choice([0.13,0.121,0.785,0.342])))
         #time.sleep(0.1)
 
 ###
