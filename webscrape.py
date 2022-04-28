@@ -57,8 +57,10 @@ from GUI.prepositions import prepositions
 from GUI.pronouns import pronouns
 from GUI.verbs import verbs
 
-list_of_dicts = ["adjectives", "adverbs", "articles", "conjunctions", "interjections", "modal_verbs", "nouns", "prepositions", "pronouns", "verbs"]
-list_of_words = [adjectives, adverbs, articles, conjunctions, interjections, modal_verbs, nouns, prepositions, pronouns, verbs]
+#list_of_dicts = ["adjectives", "adverbs", "articles", "conjunctions", "interjections", "modal_verbs", "nouns", "prepositions", "pronouns", "verbs"]
+#list_of_words = [adjectives, adverbs, articles, conjunctions, interjections, modal_verbs, nouns, prepositions, pronouns, verbs]
+list_of_dicts = ["adverbs",]
+list_of_words = [adverbs,]
 lists_2_trans=[]
 for i in range(0,len(list_of_words)):
     lists_2_trans.append(list(list_of_words[i].keys()))
@@ -87,16 +89,21 @@ for iii in range(0,len(lists_2_trans)):
                 search_me+=columns[j]
             else:
                 search_me+=columns[j]+'+'
+               # search_me+=columns[j]+'\%20'
         print(search_me,type(search_me))
         headers={'User-Agent':random.choice(user_agents)}
         URL="https://www.google.com/search?q=%22"+search_me+"%22+translate+to+persian&client=ubuntu&channel=fs&ei=9PliYrXYCYepgAbHiqroAw&ved=0ahUKEwi1oveTrKj3AhWHFMAKHUeFCj0Q4dUDCA4&uact=5&oq=%22i+am+here%22+translate+to+persian&gs_lcp=Cgdnd3Mtd2l6EAM6BwgAEEcQsAM6BQgAEKIEOgUIABCRAjoKCAAQsQMQgwEQQzoLCAAQgAQQsQMQgwE6DgguEIAEELEDEMcBEKMCOg4ILhCABBCxAxDHARDRAzoLCC4QgAQQsQMQgwE6CAgAEIAEELEDOgoILhCxAxDUAhBDOgQILhBDOgcILhCxAxBDOgsILhCABBDHARCvAToOCC4QgAQQsQMQxwEQrwE6CAguEIAEENQCOgUIABCABDoKCAAQkQIQRhD_AToECAAQAzoFCC4QgAQ6CggAEIAEEEYQ_wE6BggAEBYQHjoICCEQFhAdEB46BwghEAoQoAFKBAhBGABKBAhGGABQ9QtYtYMBYM-FAWgHcAF4AYABnAWIAdU3kgEMNC4yOC4zLjEuMC4ymAEAoAEByAEIwAEB&sclient=gws-wiz"
-        image_URL="https://www.google.com/search?q="+search_me+"&client=ubuntu&hs=Nxt&channel=fs&source=lnms&tbm=isch&sa=X&ved=2ahUKEwj4mriK3Kn3AhVNeMAKHccDDIYQ_AUoAXoECAEQAw&biw=1920&bih=944&dpr=1#imgrc=u3Q2KHasDPX2BM"
+        #URL="https://translate.google.co.uk/?sl=en&tl=fa&text="+str(search_me)+"&op=translate"
+        
+        #image_URL="https://www.google.com/search?q="+search_me+"&client=ubuntu&hs=Nxt&channel=fs&source=lnms&tbm=isch&sa=X&ved=2ahUKEwj4mriK3Kn3AhVNeMAKHccDDIYQ_AUoAXoECAEQAw&biw=1920&bih=944&dpr=1#imgrc=u3Q2KHasDPX2BM"
         page = requests.get(URL,headers=headers)
         print("URL",URL)
-        ####image_page = requests.get(image_URL,headers=headers)
+        #break
+        #image_page = requests.get(image_URL,headers=headers)
         tree = parser.fromstring(page.content)
         ####image_tree = parser.fromstring(image_page.content)
         translation = tree.xpath('//pre[@id="tw-target-text"]/span[@class="Y2IQFc"]/text()')
+       # translation = tree.xpath('//li[@id="kvLWu-0"]/div[@class="xUPQqb"]/text()')
         print(translation)
         #if i == 2:
         #    break
@@ -130,7 +137,7 @@ for iii in range(0,len(lists_2_trans)):
         f.close()
         #s=input("Ctrl+C to end")
 
-        time.sleep(float(random.choice([3,4,5,6,7,8,9,10]))+float(random.choice([0.13,0.121,0.785,0.342])))
+        time.sleep(float(random.choice([10,20,30]))+float(random.choice([0.13,0.121,0.785,0.342])))
         #time.sleep(0.1)
 
 ###
