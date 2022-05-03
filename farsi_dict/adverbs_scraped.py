@@ -1,4 +1,4 @@
 adverbs={
-"about" : "درباره",
-"actually" : "در واقع",
+"about" : "",
+"actually" : "",
 }
