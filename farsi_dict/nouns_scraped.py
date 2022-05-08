@@ -68,7 +68,7 @@ nouns={
 "ground" :["زمین","za-min"],
 "group" :["گروه","grooh"],
 "hand" :["دست","dast"],
-"head" :["سر","sae"],
+"head" :["سر","sar"],
 "health" :["سلامتی","salaamati"],
 "home" :["خانه","khoo-neh"],
 "hour" :["ساعت","saa-a't"],
