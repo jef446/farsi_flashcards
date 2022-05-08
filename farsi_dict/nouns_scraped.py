@@ -10,7 +10,7 @@ nouns={
 "bit" :["کمی","ka-mi"],
 "body" :["بدن","ba-dan"],
 "book" :["کتاب","ke-taab"],
-"boy" :["[سر","pe-sar"],
+"boy" :["پسر","pe-sar"],
 "building" :["ساختمان","saakh-te-moon"],
 "business" :["کسب و کار","kasb o kaar"],
 "butt" :["کون","koon"],
