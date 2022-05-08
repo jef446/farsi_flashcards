@@ -17,8 +17,8 @@ farsimap={
 "Interjections":interjections,
 "Modal Verbs":modal_verbs,
 "Nouns":nouns,
-"Prepositions":prepositions,
-"Pronouns":pronouns,
+#"Prepositions":prepositions,
+#"Pronouns":pronouns,
 "Verbs":verbs,
 }
 '''

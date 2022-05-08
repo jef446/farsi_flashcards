@@ -56,8 +56,8 @@ class ModuleFlashcardsWindow(QWidget):
         new_word_list=list(shuffled_dictionary[fm_keys[I]].keys())
         print(new_word_list)
         self.ui.label.setText(fm_keys[I])
-        self.ui.label_2.setText(farsimap[fm_keys[I]][new_word_list[J]])
-        self.ui.label_3.setText(new_word_list[J])
+        self.ui.label_2.setText(farsimap[fm_keys[I]][new_word_list[J]][0])
+        self.ui.label_3.setText("\""+new_word_list[J]+"\" : "+farsimap[fm_keys[I]][new_word_list[J]][-1])
         J+=1
 
 
