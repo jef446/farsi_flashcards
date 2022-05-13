@@ -1,7 +1,7 @@
 conjunctions={
 "after" :["بعد از","ba'ad aaz"],
 "although" :["با اينكه","baa een-keh"],
-"and" :[" و","oo"],
+"and" :[" و","va"],
 "as" :["تا","taa"],
 "because" :["چونکه/زیرا","chun-keh / zee-raa"],
 "before" :["قبل از","ghab-le aaz"],
